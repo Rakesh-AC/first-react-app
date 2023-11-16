@@ -1,24 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './componets/Navbar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          MY First React App. 
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+
+
+      {/* we add navbar component like this  */}
+      {/* <Navbar></Navbar> */}
+      {/* Also like this */}
+      <Navbar title="TextUtils" aboutText="About Us" />
+    </>
   );
 }
 

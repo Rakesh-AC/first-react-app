@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import Navbar from './componets/Navbar';
-
+import Navbar from './components/Navbar';
+import TextForm from './components/TextForm';
 function App() {
   return (
     <>
@@ -11,6 +11,11 @@ function App() {
       {/* <Navbar></Navbar> */}
       {/* Also like this */}
       <Navbar title="TextUtils" aboutText="About Us" />
+      {/* We can also pass props to the components */}
+      <div className="container">
+        <TextForm heading='Enter the text to analyze'/>
+      </div>
+
     </>
   );
 }

@@ -19,6 +19,10 @@ export default function TextForm(props) {
     setText(text.toLowerCase());
   }
 
+  const trimSpaces = () =>{
+    setText(text.replace(/\s+/g, ' '));
+  }
+
   
 
   return (
@@ -30,6 +34,10 @@ export default function TextForm(props) {
         </div>
         <button className="btn btn-primary" onClick={convertToUppercase}>Convert to Uppercase</button>
         <button className="btn btn-primary ms-2" onClick={toLoCase}>Convert to Uppercase</button>
+        <button className="btn btn-primary ms-2" onClick={trimSpaces}>Trim Text</button>
+
+
+
 
         <button className="btn btn-secondary ms-2" onClick={clearText}>clear</button>
     </div>

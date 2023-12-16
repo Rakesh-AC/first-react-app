@@ -13,12 +13,17 @@ function App() {
     if(mode === 'light'){
       setMode("dark");
       document.body.style.backgroundColor = '#27424a';
-      showAlert("Dart mode as been enabled", "success")
+      showAlert("Dart mode as been enabled", "success");
+      document.title = "TextUtils- Dark mode";
+
     }else{
       setMode("light");
       document.body.style.backgroundColor = 'white';
       showAlert("Light mode as been enabled", "success")
+      document.title = "TextUtils- Light mode";
     }
+
+    
   }
 
 
@@ -33,6 +38,12 @@ function App() {
     setTimeout(() => {
       setAlert(null);
     }, 3000)
+
+    setTimeout(() => {
+      document.title = "TextUtils- Download"
+    }, 2000)
+    
+  
   }
 
   return (
